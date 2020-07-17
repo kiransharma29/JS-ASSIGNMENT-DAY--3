@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 3 assignment</title>
+    <h2>Take input from the user and based on condition giving grades accordingly</h2>
+</head>
+<body>
+   <script type='text/javascript'>
+   //using conditional
+    marks = parseInt(prompt('marks',));
+    if(marks>=70 && marks<=100)
+    {
+        console.log(`Marks are ${marks} and grade is A`);
+    }
+    else if(marks>=50 && marks <=69)
+    {
+        console.log(`Marks are ${marks} and grade is B`);
+    }
+    else if(marks>=40 && marks<=49){
+        console.log(`Marks are ${marks} and grade is C`)
+    }
+    else{
+        console.log(`Marks are ${marks} and grade is F`)
+    }
+//using switch
+   switch(marks){
+       case 50: 
+              console.log(`Marks are ${marks} and grade is B`);
+              break;
+       case 40: 
+               console.log(`Marks are ${marks} and grade is C`);
+   }
+  //using ternary
+  var res = (marks>=50) && (marks<=100)? `Marks are ${marks} and grade is B`: `Marks are ${marks} and grade is C`;
+  console.log(res);
+   </script> 
+</body>
+</html>
